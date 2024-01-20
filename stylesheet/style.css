@@ -1,0 +1,27 @@
+@font-face 
+{
+    font-family: AsideFont;
+    src: url('fonts/aside_font/RobotoMono-Italic-VariableFont_wght.ttf') format('ttf');
+    src: url('fonts/aside_font/RobotoMono-VariableFont_wght.ttf') format('ttf');
+}
+@font-face {
+    font-family: HeaderFont;
+    src: url('fonts/header_font/Oswald-VariableFont_wght.ttf') format('ttf');
+}
+
+header
+{
+
+}
+aside
+{
+font-family: AsideFont;
+}
+main
+{
+font-family: HeaderFont;
+}
+footer
+{
+
+}
