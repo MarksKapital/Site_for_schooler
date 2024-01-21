@@ -11,7 +11,8 @@ body{
 }
 header
 {
-
+margin: 10px auto;
+background-image: url('imgs/1660025660_1-kartinkin-net-p-fon-dlya-shapki-saita-krasivo-2.png');
 }
 aside
 {
@@ -22,7 +23,7 @@ main
     font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: space-between;
-    
+
 }
 footer
 {
