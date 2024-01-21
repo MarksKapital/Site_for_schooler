@@ -5,6 +5,10 @@ margin: 0;
 border: 0;
 padding: 0;
 }
+body{
+    max-width: 1920px;
+    width: 100%;
+}
 header
 {
 
@@ -16,6 +20,9 @@ aside
 main
 {
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
 }
 footer
 {
