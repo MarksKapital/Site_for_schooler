@@ -1,13 +1,15 @@
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+// Обработчик для кнопок с классом .discipline
+document.querySelectorAll("button.discipline").forEach(button => {
+    button.addEventListener("click", () => {
+        button.closest(".wrapper-one").classList.add("hide");
+        button.closest(".wrapper-two").classList.remove("hide");
+    });
+});
+
+// Обработчик для кнопок с классом .more
+document.querySelectorAll("button.more").forEach(button => {
+    button.addEventListener("click", () => {
+        button.closest(".wrapper-one").classList.remove("hide");
+        button.closest(".wrapper-two").classList.add("hide");
+    });
+});

@@ -5,6 +5,7 @@
     border: 0;
     padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 ul,li{
     list-style: none;
@@ -69,12 +70,20 @@ ul{
 a:not(:first-child){
     margin-left: 20px;
 }
-li{
+li, button{
     border-radius: 10px;
     border: 2px solid rgb(205, 199, 199);
     padding: 10px;
     cursor: pointer;
     
+}
+button{
+    background-color: #0e0e0e;
+    color:#fff;
+}
+.discipline{
+    max-width: 880px;
+    width: 100%;
 }
 .item-active{
     background-color: rgb(205, 199, 199);
@@ -87,12 +96,17 @@ article{
 }
 .news{}
 .news-title, .discipline-section__title{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 .news-subtitle{
     margin-top: 12px;
     font-size: 18px;
+}
+.news-subtitle-list{
+    margin-top: 12px;
+    font-size: 22px;
+    text-align: center;
 }
 .news-image{
     margin-top: 12px;
@@ -109,11 +123,27 @@ article{
     height: 2px;
     background-color: rgb(205, 199, 199);
 }
+.discipline-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(205, 199, 199);
+}
 .discipline-section__title, .discipline-section__item{
     margin-bottom: 20px;
 }
 .discipline{
     margin-bottom: 10px;
+}
+p{
+    padding: 5px 0;
+}
+.hide {
+    display: none;
+  }
+.default{
+    display: flex;
 }
 
 
