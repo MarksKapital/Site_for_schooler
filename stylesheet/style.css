@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,18 @@
     padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+ul,li{
+    list-style: none;
+    color: #fff;
+    
+}
 a{
     text-decoration: none;
     color: black;
 }
 body{
-    
+    background-color: #0e0e0e;
+    color:#fff;
 }
 .container{
     max-width: 1920px;
@@ -30,9 +37,11 @@ header{
 }
 .header-title{
     text-align: center;
-    font-size: 48px;
-    color: white
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
 }
+
 
 
 /* ОБОЛОЧКА ОСНОВНОЙ ИНФОРМАЦИИ САЙТА */
@@ -62,20 +71,22 @@ a:not(:first-child){
 }
 li{
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(205, 199, 199);
     padding: 10px;
     cursor: pointer;
     
 }
 .item-active{
     background-color: rgb(205, 199, 199);
+    color: #000000;
+ 
 }
 article{
     margin-top: 40px;
     padding-right: 100px;
 }
 .news{}
-.news-title{
+.news-title, .discipline-section__title{
     font-size: 24px;
     font-weight: bold;
 }
@@ -98,40 +109,31 @@ article{
     height: 2px;
     background-color: rgb(205, 199, 199);
 }
+.discipline-section__title, .discipline-section__item{
+    margin-bottom: 20px;
+}
+.discipline{
+    margin-bottom: 10px;
+}
+
 
     /* БЛОК С КОМАНДАМИ (сбоку) */
 
-
-aside{
+aside {
     
 }
-.aside-section{
+.aside-section > a > img{
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.aside-section:not(:first-child){
-    margin-top: 20px;
-}
-.aside-section:nth-child(1){
-    background-image: url(../imgs/gambit.jpg)
-}
-.aside-section:nth-child(2){
-    background-image: url(../imgs/spirit.jpg)
-}
-.aside-section:nth-child(3){
-    background-image: url(../imgs/virtus.png)
-}
-.aside-section:nth-child(4){
-    background-image: url(../imgs/unique.jpg)
-}
-.aside-section:nth-child(5){
-    background-image: url(../imgs/cyber.jpg)
-}
+    width: 220px;
+    height: 100%;
 
+}
+.aside-section:first-child{
+    margin-top: 85px;
+}
+img[alt="Command"]{
+    border: 2px solid rgb(205, 199, 199) !important;
+}
  /* ПОДВАЛ САЙТА */
  footer{
     display: flex;
