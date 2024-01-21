@@ -30,7 +30,6 @@
                 <a href="index-discipline.html"><li class="item-active">Дисциплины</li></a>
                 <a href="index-popular.html"><li>Популярные игры</li></a>
                 <a href="index-history.html"><li>История киберспорта РФ</li></a>
-
             </ul>
 
           </nav>
@@ -41,16 +40,16 @@
                   <div class="discipline-section__item">В России официально признаны семь дисциплин:</div>
 
                   <div class="wrapper-one">
-                    <button class="discipline default">
+                    <button type="button" onclick="" class="discipline default">
                       <p>«Боевая арена»</p>
                     </button>
                   </div>
                   <div class="wrapper-two hide">
-                    <button class="more">
+                    <button type="button" onclick="" class="more">
                       <p>«Боевая арена»</p>
                       <hr class="discipline-line">
-                      <p>Категория объединяет шутеры (Counter-Strike: Global Offensive, Overwatch, Valorant, Tom Clancy’s Rainbow Six Siege, Warface) и трёхмерные экшены (Armored Warfare, World of Tanks, War Thunder)</p>
-                      <p>Признание «тактического трёхмерного боя» в качестве новой дисциплины позволит проводить на территории России по играм такого типа официальные соревнования вроде Чемпионата России и Кубка России.</p>
+                      <p>«боевая арена» — это современный киберспортивный термин. В игровой индустрии игры этого поджанра называются MOBA (Multiplayer Online Battle Arena), а сам термин более десяти лет назад придумала американская компания Riot Games для своей тогда ещё набирающей популярность игры League of Legends.</p>
+                      <p>В играх дисциплины «боевая арена» две команда игроков (как правило, по пять человек в каждой) сражаются на большой карте с единственной целью — уничтожить главное здание на базе противника.</p>
                     </button>  
                   </div>
 
@@ -61,6 +60,8 @@
                     <button class="more">
                       <p>«Тактический трехмерный бой»</p>
                       <hr class="discipline-line">
+                      <p>Категория объединяет шутеры (Counter-Strike: Global Offensive, Overwatch, Valorant, Tom Clancy’s Rainbow Six Siege, Warface) и трёхмерные экшены (Armored Warfare, World of Tanks, War Thunder)</p>
+                      <p>Признание «тактического трёхмерного боя» в качестве новой дисциплины позволит проводить на территории России по играм такого типа официальные соревнования вроде Чемпионата России и Кубка России.</p>
                     </button>  
                   </div>
 
@@ -71,6 +72,7 @@
                     <button class="more">
                       <p>«Соревновательные головоломки»</p>
                       <hr class="discipline-line">
+                      <p></p>
                     </button>  
                   </div>
 
@@ -136,6 +138,38 @@
       <footer>
         <p>©2024 Киберспорт в России. Все права защищены.</p>
       </footer>
+      <!-- Добавление событий для всех элементов с классами .wrapper-one и .wrapper-two -->
+<script>
+  // Получаем все элементы с классом .wrapper-one
+  var wrapperOneButtons = document.querySelectorAll('.wrapper-one .discipline.default');
+
+  // Добавляем обработчик для каждой кнопки .wrapper-one
+  wrapperOneButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Скрываем ближайший родительский элемент с классом .wrapper-one
+      this.closest('.wrapper-one').style.display = 'none';
+
+      // Показываем ближайший родительский элемент с классом .wrapper-two
+      this.closest('.wrapper-one').nextElementSibling.style.display = 'block';
+    });
+  });
+
+  // Получаем все элементы с классом .wrapper-two
+  var wrapperTwoButtons = document.querySelectorAll('.wrapper-two .more');
+
+  // Добавляем обработчик для каждой кнопки .wrapper-two
+  wrapperTwoButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Скрываем ближайший родительский элемент с классом .wrapper-two
+      this.closest('.wrapper-two').style.display = 'none';
+
+      // Показываем ближайший родительский элемент с классом .wrapper-one
+      this.closest('.wrapper-two').previousElementSibling.style.display = 'block';
+    });
+  });
+</script>
+
+
     </div>
 </body>
 </html>
