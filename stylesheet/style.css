@@ -24,12 +24,18 @@ body{
     max-width: 1920px;
     width: 100%;
 }
-
+iframe{
+    width: 100%;
+    height: 500px;
+}
 
     /*ШАПКА САЙТА*/
 
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     max-width: 100%;
     width: 100%;
@@ -37,7 +43,6 @@ header{
     background-color: #000000;
 }
 .header-title{
-    text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;

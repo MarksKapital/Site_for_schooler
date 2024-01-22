@@ -1,0 +1,47 @@
+@media screen and (max-width: 1200px) {
+    nav{
+        margin-top: 90px !important;
+    }
+    .content{
+        padding: 0 20px !important;
+    }
+}
+@media screen and (max-width: 900px){
+    .content{
+        padding: 0 30px !important;
+    }
+    aside{
+        display: none;
+    }
+    article{
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width: 768px){
+    ul{
+        flex-direction: column;
+    }
+    a:not(:first-child){
+        margin-top: 10px;
+    }
+    a, li{
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    iframe{
+        height: 350px !important;
+    }
+}
+@media screen and (max-width: 520px){
+    .content{
+        padding: 0 5px !important;
+    }
+}
+@media screen and (max-width: 420px){
+    .header-title{
+        font-size: 28px;
+    }
+    iframe{
+        height: 300px !important;
+    }
+}
