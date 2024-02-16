@@ -35,7 +35,7 @@ iframe{
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: fixed;
     max-width: 100%;
     width: 100%;
@@ -51,7 +51,15 @@ header{
 
 
 /* ОБОЛОЧКА ОСНОВНОЙ ИНФОРМАЦИИ САЙТА */
-
+.city-organiser_item{
+    width: 850px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.city-organiser_map-text{
+    font-size: 30px;
+    font-weight: bold;
+}
 
 .content{
     padding-top: 100px;
@@ -105,6 +113,7 @@ article{
     font-weight: bold;
 }
 .news-subtitle{
+    text-align: left;
     margin-top: 12px;
     font-size: 18px;
 }
