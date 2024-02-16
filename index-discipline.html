@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киберспорт в РФ</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/adaptive.css">
+</head>
+<body>
+    <!-- ОБОЛОЧКА САЙТА-->
+    <div class="container">
+
+      <!-- ШАПКА САЙТА-->
+      <header>
+        <div><h1 class="header-title">Игры будущего</h1></div>
+
+        <div>
+          <nav>
+          <ul>
+            <a href="index.html"><li>Новости</li></a>
+            <a href="index-discipline.html"><li class="item-active">Дисциплины</li></a>
+            <a href="index-popular.html"><li>Популярные игры</li></a>
+            <a href="index-history.html"><li>История киберспорта РФ</li></a>
+            <a href="index-city-organiser.html"><li>Город организатор</li></a>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+      <!-- ОБОЛОЧКА ОСНОВНОЙ ИНФОРМАЦИИ САЙТА-->
+      <div class="content">
+
+        <!-- БЛОК ОСНОВНОЙ ИНФОРМАЦИИ САЙТА-->
+        <main>
+
+          <!-- НАВИГАЦИЯ В БЛОКЕ-->
+
+          <article>
+            <section class="discipline-section">
+                <p class="discipline-section__title">Формат Игр будущего 2024</p>
+                  <div class="discipline-section__item">Международный турнир будет проходить по 16 гибридным дисциплинам. Каждая из них олицетворяет концепцию «фиджитал» (physical+digital), то есть объединяет физическую культуру и киберспорт или VR-/AR-технологию.</div>
+                  <div class="discipline-section__item">Соревнования поделены на пять категорий, или «вызовов»: спорт, тактика, стратегия, технологии и скорость.</div>
+
+                  <div class="wrapper-one">
+                    <button type="button" onclick="" class="discipline default">
+                      <p>«Спорт»</p>
+                    </button>
+                  </div>
+                  <div class="wrapper-two hide">
+                    <button type="button" onclick="" class="more">
+                      <p>«Спорт»</p>
+                      <hr class="discipline-line">
+                      <p>Спортивные симуляторы и их реальные аналоги: футбол, баскетбол, хоккей, гонки, единоборства, скейтбординг, велогонка, BMX;</p>
+                    </button>  
+                  </div>
+
+                  <div class="wrapper-one">
+                    <button class="discipline default">«Тактика»</button>
+                  </div>
+                  <div class="wrapper-two hide">
+                    <button class="more">
+                      <p>«Тактика»</p>
+                      <hr class="discipline-line">
+                      <p> Тактические шутеры + лазертаг: Warface, CS 2, Standoff 2;</p>
+                    </button>  
+                  </div>
+
+                  <div class="wrapper-one">
+                    <button class="discipline default">«Стратегия»</button>
+                  </div>
+                  <div class="wrapper-two hide">
+                    <button class="more">
+                      <p>«Стратегия»</p>
+                      <hr class="discipline-line">
+                      <p>Dota 2, Mobile Legends: Bang Bang и Мир Танков + суперфинал (что подразумевается под этим термином, пока не очень понятно);</p>
+                    </button>  
+                  </div>
+
+                  <div class="wrapper-one">
+                    <button class="discipline default">«Скорость»</button>
+                  </div>
+                  <div class="wrapper-two hide">
+                    <button class="more">
+                      <p>«Скорость»</p>
+                      <hr class="discipline-line">
+                      <p>Прохождение игр на скорость (спидран) + суперфинал;</p>
+                    </button>  
+                  </div>
+
+                  <div class="wrapper-one">
+                    <button class="discipline default">«Технологии»</button>
+                  </div>
+                  <div class="wrapper-two hide">
+                    <button class="more">
+                      <p>«Технологии»</p>
+                      <hr class="discipline-line">
+                      <p>Битва роботов, гонки дронов, спортивное программирование, танцевальный симулятор, VR-ритм симулятор и кибатлетика. В рамках предстоящего турнира прошли 10 отборочных туров — фиджитал-игры.</p>
+                    </button>  
+                  </div>
+                  <p>Суммарный призовой фонд во всех дисциплинах составит 10 миллионов долларов. Эта сумма распределена по всем пяти дисциплинам соревнований. У турниров по спортивным симуляторам в футболе и баскетболе — самые большие призовые фонды в истории. Они составят по 1,25 миллиона долларов.</p>
+                <img class="news-image" src="imgs/cybersport.jpg" alt="">
+                
+            </section>
+          </article>
+
+        </main>
+
+        <!-- БЛОК С КОМАНДАМИ (сбоку) -->
+        <aside>
+          <section class="aside-section"><a href="https://gambit.gg/"><img src="imgs/gambit.jpg" alt="Command"></a></section>
+          <section class="aside-section"><a href="https://teamspirit.gg/"><img src="imgs/TSpirit.jpg" alt="Command"></a></section>
+          <section class="aside-section"><a href="https://virtus.pro/"><img src="imgs/virtus.png" alt="Command"></a></section>
+          <section class="aside-section"><a href="https://unique.gg/"><img src="imgs/unique.jpg" alt="Command"></a></section>
+          <section class="aside-section"><a href="https://cyberlegacy.team/ru"><img src="imgs/cyber.jpg" alt="Command"></a></section>
+        </aside>
+        
+      </div>
+      <!-- ПОДВАЛ САЙТА -->
+      <footer>
+        <p>©2024 Киберспорт в России. Все права защищены.</p>
+      </footer>
+      <!-- Добавление событий для всех элементов с классами .wrapper-one и .wrapper-two -->
+<script>
+  // Получаем все элементы с классом .wrapper-one
+  var wrapperOneButtons = document.querySelectorAll('.wrapper-one .discipline.default');
+
+  // Добавляем обработчик для каждой кнопки .wrapper-one
+  wrapperOneButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Скрываем ближайший родительский элемент с классом .wrapper-one
+      this.closest('.wrapper-one').style.display = 'none';
+
+      // Показываем ближайший родительский элемент с классом .wrapper-two
+      this.closest('.wrapper-one').nextElementSibling.style.display = 'block';
+    });
+  });
+
+  // Получаем все элементы с классом .wrapper-two
+  var wrapperTwoButtons = document.querySelectorAll('.wrapper-two .more');
+
+  // Добавляем обработчик для каждой кнопки .wrapper-two
+  wrapperTwoButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Скрываем ближайший родительский элемент с классом .wrapper-two
+      this.closest('.wrapper-two').style.display = 'none';
+
+      // Показываем ближайший родительский элемент с классом .wrapper-one
+      this.closest('.wrapper-two').previousElementSibling.style.display = 'block';
+    });
+  });
+</script>
+
+
+    </div>
+</body>
+</html>
