@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Play", sans-serif;
+}
+.main-title{
+    font-size: 76px;
+}
+.main-subtitle{
+    font-weight: 300;
+    font-size: 18px;
+}
+.main-number-block:not(:first-child){
+    margin-top: 10px;
+}
+.main-hr{
+    margin-top: 10px;
+}
+.main-number-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-number{
+    font-size: 48px;
+}
+.main-number-text{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.main-hr{
+    height: 2px;
+    background-color: white;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
