@@ -6,13 +6,14 @@
     <title>Игры будущего</title>
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/adaptive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- ОБОЛОЧКА САЙТА-->
     <div class="container">
 
       <!-- ШАПКА САЙТА-->
-      <header>
+      <header data-aos="fade-down" data-aos-delay="100">
         <div><h1 class="header-title">Игры будущего</h1></div>
 
         <div>
@@ -20,7 +21,7 @@
           <ul>
             <a href="main.html"><li>Главная</li></a>
             <a href="index.html"><li class="item-active">Новости</li></a>
-            <a href="index-discipline.html"><li>Дисциплины</li></a>
+            <a href="index-timetable.html"><li>Расписание</li></a>
             <a href="index-popular.html"><li>Об играх</li></a>
             <a href="index-city-organiser.html"><li>Город организатор</li></a>
           </ul>
@@ -66,18 +67,22 @@
 
         <!-- БЛОК С КОМАНДАМИ (сбоку) -->
         <aside>
-          <section class="aside-section"><a href="https://vk.com/video-212758101_456239937"><img src="imgs/future1.jpg" alt="Command"></a></section>
-          <section class="aside-section"><a href="https://vk.com/video-212758101_456240541"><img src="imgs/future2.jpg" alt="Command"></a></section>
-          <section class="aside-section"><a href="https://gofuture.games/videos/igr-budushego-fevral-2024"><img src="imgs/future3.jpg" alt="Command"></a></section>
-          <section class="aside-section"><a href="https://gofuture.games/videos/tvoj-bilet-na-igry-budushego"><img src="imgs/future4.jpg" alt="Command"></a></section>
-          <section class="aside-section"><a href="https://vk.com/video-212758101_456240474"><img src="imgs/future6.jpg" alt="Command"></a></section>
+          <section class="aside-section" data-aos="fade-left" data-aos-delay="100"><a href="https://vk.com/video-212758101_456239937"><img src="imgs/future1.jpg" alt="Command"></a></section>
+          <section class="aside-section" data-aos="fade-left" data-aos-delay="200"><a href="https://vk.com/video-212758101_456240541"><img src="imgs/future2.jpg" alt="Command"></a></section>
+          <section class="aside-section" data-aos="fade-left" data-aos-delay="300"><a href="https://gofuture.games/videos/igr-budushego-fevral-2024"><img src="imgs/future3.jpg" alt="Command"></a></section>
+          <section class="aside-section" data-aos="fade-left" data-aos-delay="400"><a href="https://gofuture.games/videos/tvoj-bilet-na-igry-budushego"><img src="imgs/future4.jpg" alt="Command"></a></section>
+          <section class="aside-section" data-aos="fade-left" data-aos-delay="500"><a href="https://vk.com/video-212758101_456240474"><img src="imgs/future6.jpg" alt="Command"></a></section>
         </aside>
         
       </div>
       <!-- ПОДВАЛ САЙТА -->
       <footer>
-        <p>©2024 Киберспорт в России. Все права защищены.</p>
+        <p>©2024 Игры будущего. Все права защищены.</p>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

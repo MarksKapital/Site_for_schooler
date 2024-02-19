@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/mainstyle.css">
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Игры будущего</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient(90deg, #4215aa,#4607d8,#4215aa);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #4215aa,#4607d8,#4215aa);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+        }
+    </style>
 </head>
 <body>
     <!-- ОБОЛОЧКА САЙТА-->
 
     <div class="container">
          <!-- ШАПКА САЙТА-->
-        <header>
+        <header data-aos="fade-down" data-aos-delay="100">
             <div>
                 <h1 class="header-title">Игры будущего</h1>
             </div>
@@ -22,7 +28,7 @@
                     <ul>
                         <a hreg="main.html"><li class="item-active">Главная</li></a>
                         <a href="index.html"><li>Новости</li></a>
-                        <a href="index-discipline.html"><li>Дисциплины</li></a>
+                        <a href="index-timetable.html"><li>Расписание</li></a>
                         <a href="index-popular.html"><li>Об играх</li></a>
                         <a href="index-city-organiser.html"><li>Город организатор</li></a>
                     </ul>
@@ -34,31 +40,34 @@
         
         <!-- БЛОК ОСНОВНОЙ ИНФОРМАЦИИ САЙТА-->
             <main>
-                <h1 class="main-title">ИГРЫ<br> БУДУЩЕГО<br> КАЗАНЬ 2024</h1>
-                <p class="main-subtitle">Первое в истории спортивное шоу в концепции фиджитал,<br>
+                <h1 class="main-title" data-aos="fade-right" data-aos-delay="100">ИГРЫ<br> БУДУЩЕГО<br> КАЗАНЬ 2024</h1>
+                <p class="main-subtitle" data-aos="fade-right" data-aos-delay="250">Первое в истории спортивное шоу в концепции фиджитал,<br>
                     объединяющее соревнования<br>
                     в физическом и цифровом измерениях.</p>
-                <p class="main-subtitle">Дата проведения с 21 февраля по 3 марта.</p>
-                <div class="main-number-block">
+                <p class="main-subtitle" data-aos="fade-right" data-aos-delay="400">Дата проведения с 21 февраля по 3 марта.</p>
+                <div class="main-number-block" data-aos="fade-right" data-aos-delay="450">
                     <p class="main-number">10+</p>
                     <p class="main-number-text">дней соревнований</p>
                 </div>
-                <hr class="main-hr">
-                <div class="main-number-block">
+                <hr class="main-hr" data-aos="fade-right" data-aos-delay="450">
+                <div class="main-number-block" data-aos="fade-right" data-aos-delay="600">
                     <p class="main-number">21</p>
                     <p class="main-number-text">дисциплина</p>
                 </div>
-                <hr class="main-hr">
-                <div class="main-number-block">
+                <hr class="main-hr" data-aos="fade-right" data-aos-delay="600">
+                <div class="main-number-block" data-aos="fade-right" data-aos-delay="750">
                     <p class="main-number">2000</p>
                     <p class="main-number-text">спортсменов</p> 
                 </div>
-                <hr class="main-hr">
             </main>
             <aside>
-                <img src="imgs/mainlogopng.png" alt="">
+                <img src="imgs/mainlogopng.png" data-aos="fade-left" data-aos-delay="300" alt="">
             </aside>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
